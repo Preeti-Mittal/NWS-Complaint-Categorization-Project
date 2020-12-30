@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE> HOME </TITLE>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = "css/styles.css")}}">
+</head>
+<body>
+<header>
+<div class="container">
+<div id = "brandname">
+	Machine Learning App
+</div>
+<h2> Complaint Categorization </h2>
+</div>
+</header>
+<div class = "ml-container">
+<form action = "{{url_for("predict")}}"method="POST">
+<p> Enter the complaint </p>
+<textarea name="message" rows="10" 60/s="100">
+</textarea>
+<br>
+<input type="submit" class="btn-info" value="Submit">
+</form>
+</div>
+</body>
+</html>
+

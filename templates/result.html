@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE> HOME </TITLE>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = "css/styles.css")}}">
+</head>
+<body>
+<header>
+<div class="container">
+<div id = "brandname">
+	Machine Learning App
+</div>
+<h2> Complaint Categorization </h2>
+</div>
+</header>
+<div>
+<p style="color:blue, font=size:20, text-align : center;"><b> Category of the complaint is </b></p> 
+
+{{ Prediction }}
+
+</div>
+</body>
+</html>
+
